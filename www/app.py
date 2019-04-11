@@ -14,6 +14,7 @@ def index(request):
 
 
 async def init():
+        # 创建应用
         app = web.Application()
         runner = web.AppRunner(app)
         app.router.add_route('GET', '/', index)
